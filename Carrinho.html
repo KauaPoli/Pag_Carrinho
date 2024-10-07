@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="pagina_produtos.css"> <!-- Reutiliza o CSS do site principal -->
+    <link rel="stylesheet" href="carrinho.css"> <!-- CSS específico para a página de carrinho -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="pagina_produtos.html">Coleção</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html" class="ativo">Carrinho</a></li>
+            </ul>
+        </nav>
+        <h1>Seu Carrinho de Compras</h1>
+    </header>
+
+    <main>
+        <section class="carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-carrinho">
+                    <!-- Linhas de produtos serão geradas via JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="total-final">
+                <h3>Total Final: <span id="total-final">R$ 0,00</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Loja de Produtos &copy; 2024</p>
+        <div class="social-icons">
+            <a href="#"><img src="face.png" alt="Facebook"></a>
+            <a href="#"><img src="inta.png" alt="Instagram"></a>
+            <a href="#"><img src="twi.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script src="carrinho.js"></script>
+</body>
+
+</html>
